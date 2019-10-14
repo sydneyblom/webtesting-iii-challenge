@@ -1,5 +1,5 @@
 import React from "react";
-import { render } from "@testing-library/react";
+import {render} from '@testing-library/react';
 import Display from "../display/Display";
 
 test("Display should match snapshot", () => {
