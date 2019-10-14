@@ -19,13 +19,13 @@ test("should display green when unlocked", () => {
 });
 
 //red closed
-test("should display red when closed", () => {
+test("should display red class when closed", () => {
   const { getByText } = render(<Display closed={true} locked={false} />);
   expect(getByText(/closed/i).classList.contains("red-led")).toBe(true);
 });
 
 //green closed
-test("should display green when open", () => {
+test("should display green class when open", () => {
   const { getByText } = render(<Display closed={false} locked={false} />);
   expect(getByText(/open/i).classList.contains("green-led")).toBe(true);
 });
